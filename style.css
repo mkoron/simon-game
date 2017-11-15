@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#simon-game {
+    display: grid;
+    grid-template-columns: 12em 12em;
+    grid-gap: 1.8em;
+    background: darkgrey;
+    border: solid darkgray 2em;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#green-button {
+    background: forestgreen;
+}
+
+#red-button {
+    background: red;
+}
+
+#yellow-button {
+    background: yellow;
+}
+
+#blue-button {
+    background: blue;
+}
+
+#green-button,
+#red-button,
+#blue-button,
+#yellow-button {
+    width: 12em;
+    height: 12em;
+}
+
+#green-button:hover,
+#red-button:hover,
+#blue-button:hover,
+#yellow-button:hover {
+    opacity: .5;
+    cursor: pointer;
+}
+
+#interface {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background: beige;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 50%;
+    border: solid darkgray 1em;    
+}
